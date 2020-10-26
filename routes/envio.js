@@ -33,19 +33,12 @@ router.post('/enviar', function (req, res) {
   }
   else {
 
-    const novoEmail = new Email({
-      titulo: req.body.titulo,
-      conteudo: req.body.conteudo,
-      link: req.body.link,
-      semail: req.body.semail,
-      envmail: req.body.envmail,
-      senha: req.body.senha
-    })
-
-    novoEmail.save()
-
-    Email.find().lean()
-
+    titulo = req.body.titulo,
+      conteudo = req.body.conteudo,
+      link = req.body.link,
+      semail = req.body.semail,
+      envmail = req.body.envmail,
+      senha = req.body.senha
 
     let transporter = nodemailer.createTransport({
       service: "gmail",
