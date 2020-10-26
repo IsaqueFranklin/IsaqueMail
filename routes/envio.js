@@ -49,7 +49,7 @@ router.post('/enviar', function (req, res) {
     });
 
 
-    const handlebarOptions = {
+    /*const handlebarOptions = {
       viewEngine: {
         extName: '.hbs',
         partialsDir: './views/template',
@@ -60,14 +60,13 @@ router.post('/enviar', function (req, res) {
       extName: '.hbs',
     };
 
-    transporter.use('compile', hbs(handlebarOptions));
+    transporter.use('compile', hbs(handlebarOptions));*/
 
     transporter.sendMail({
       from: semail,
       to: envmail,
       subject: titulo,
-      text: conteudo,
-      template: 'inde'
+      text: conteudo
     }).then(message => {
       console.log(message);
     }).catch(err => {
