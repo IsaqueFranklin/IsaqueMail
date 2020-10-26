@@ -1,0 +1,50 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-light p-4">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/cliente/guias">Guias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/cliente/categorias">Categorias</a>
+        </li>
+        {{#if user}}
+        <li class="nav-item active">
+          <a class="nav-link" href="/start/home">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/start/logout">Sair</a>
+        </li>
+        {{else}}
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/start/login">Login</a>
+        </li>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+  <nav class="navbar navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+
+<style>
+  li {
+    text-decoration: none;
+    decoration: none;
+    color: white;
+  }
+
+  span {
+    color: #00b386;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+  }
+</style>

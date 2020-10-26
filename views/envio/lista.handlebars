@@ -1,0 +1,56 @@
+<div class="di">
+    <h1 class="card-title"></h1>
+    <form action="/envio/enviar" method="post">
+      <label for="titulo" class="g">Título do email: </label>
+      <input type="text" name="titulo" class="form-control"></input>
+      <br>
+      <br>
+      <br>
+      <label for="conteudo" class="g">Conteudo do email: </label>
+      <textarea name="conteudo" class="form-control text"></textarea>
+      <br>
+      <br>
+      <br>
+      <label for="link" class="g">Coloque algum link no final</label>
+      <input type="text" name="link" class="form-control"></input>
+      <br>
+      <br>
+      <label for="semail">Seu email: </label>
+      <input type="text" name="semail" class="form-control"></input>
+      <br>
+      <br>
+      <br>
+      <label for="envmail">Todos os emails de envio: </label>
+      <br>
+      <label class="g">*Separados por virgula*</label>
+      <input type="text" name="envmail" class="form-control"></input>
+      <br>
+      <br>
+      <br>
+      <label for="senha">Senha: </label>
+      <input type="text" name="senha" class="form-control"></input>
+      <br>
+      <br>
+      <br>
+      <button class="btn btn-outline-success mt-4" type="submit">Enviar</button>
+    </form>
+</div>
+
+
+<style>
+.di {
+  padding: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.text {
+  resize: none;
+  min-height: 600px;
+}
+
+.g {
+  font-size: 10px;
+}
+</style>
